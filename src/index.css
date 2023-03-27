@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+
+:root{
+  --primary:#feb236;
+  --secondary: #6b5b95;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color:#fff;
+}
+
+body{
+  font-family: 'Open Sans',sans-serif;
+  padding: 20px;
+  background-color: var(--secondary);
+}
+
+p {
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--primary);
+}
+
+header h1 a{
+  text-decoration: none;
+  
+}
+
+header nav a{
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+nav a.active {
+  background-color: var(--primary);
+}
+
+main {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* help-layout */
+
+.help-layout nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.help-layout nav a {
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.faq .question {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+/*Contact*/
+
+form{
+  margin-top: 25px;
+}
+
+form input, form label, form textarea {
+  display: block;
+}
+
+form input, form textarea{
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 16px;
+  border: 0;
+  width: 300px;
+  color: black;
+}
+
+form label {
+  margin-bottom: 15px;
+}
+
+form button {
+  border: 0;
+  padding: 10px;
+  border-radius: 16px;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+/* user */
+
+.users .card {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  background-color: var(--secondary);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.users .card a {
+  font-size: 30px;
+}
+
+/* user-details */
+
+.user-details {
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.user-details ul {
+  padding: 30px;
+}
+
+.user-details i {
+  margin-right: 10px;
+}
+
+
+.user-details a {
+  padding: 10px;
+  border: none;
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: var(--primary);
+  display: block;
+  width: 15%;
+  text-align: center;
+  margin: 10px;
+}
+.error{
+  color: black;
+  font-weight: 800;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 16px;
+  padding: 10px 10px 10px 40px;
+  width: 300px;
+  
+}
+
+.error-notfound{
+  padding: 15px;
+  border: none;
+  border-radius: 16px;
+  color: black;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.error-notfound h2,.error-notfound p {
+  color: var(--primary);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.error-notfound a{
+  color: var(--secondary);
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 16px;
+  font-weight: 600;
+  display: block;
+  width: 40%;
+  margin: 15px auto;
+}
+
+.loader{
+  text-align: center;
+}
